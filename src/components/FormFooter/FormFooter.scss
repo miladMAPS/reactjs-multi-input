@@ -1,0 +1,14 @@
+@import "../../constants/Sass/variables";
+@import "../../constants/Sass/functions";
+
+.form-footer {
+  @include flex(row-reverse, 0, 0);
+  margin: 24px 0px 16px;
+
+  button {
+    width: 30%;
+    max-width: 100px;
+    margin-left: 5px;
+    border-radius: $border-radius / 2;
+  }
+}

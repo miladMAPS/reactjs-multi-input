@@ -1,0 +1,35 @@
+@import "../../constants/Sass/variables";
+@import "../../constants/Sass/functions";
+
+.container {
+  @include box-shadow(0px 0px 7px 2px rgba(210, 210, 210, 1));
+  @include flex(column, center, center);
+  width: 90% !important;
+  margin-top: 60px;
+  border-radius: $border-radius;
+  padding-top: 24px;
+
+  .form {
+    width: 100%;
+    margin-top: 8px;
+    overflow: auto;
+
+    .input-field {
+      @include flex(0, center, flex-end);
+      color: gray;
+      margin-bottom: 20px;
+      & > :first-child {
+        max-width: 90%;
+        margin-right: auto;
+      }
+      .close-icon:hover {
+        color: $error-color;
+      }
+    }
+  }
+}
+
+.alert {
+  max-width: 400px;
+  margin: 10px auto;
+}

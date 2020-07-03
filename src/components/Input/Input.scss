@@ -1,0 +1,14 @@
+.input-field {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: gray;
+  margin-bottom: 20px;
+  & > div:first-child {
+    max-width: 90%;
+    margin-right: auto;
+  }
+  .btn-box:hover {
+    color: #e21313;
+  }
+}
